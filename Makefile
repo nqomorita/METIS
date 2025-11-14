@@ -72,7 +72,7 @@ echo $(IDXWIDTH) > $(BUILDDIR)/xinclude/metis.h
 echo $(REALWIDTH) >> $(BUILDDIR)/xinclude/metis.h
 cat include/metis.h >> $(BUILDDIR)/xinclude/metis.h
 cp include/CMakeLists.txt $(BUILDDIR)/xinclude
-cd $(BUILDDIR) && cmake $(CURDIR) $(CONFIG_FLAGS)
+cd $(BUILDDIR) && cmake $(CURDIR) $(CONFIG_FLAGS) -DCMAKE_POLICY_VERSION_MINIMUM=3.5
 endef
 
 all clean install:

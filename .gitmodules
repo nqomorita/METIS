@@ -1,3 +1,6 @@
 [submodule "GKlib"]
 	path = GKlib
 	url = https://github.com/nqomorita/GKlib.git
+[submodule "METIS"]
+	path = METIS
+	url = git@github.com:nqomorita/METIS.git
